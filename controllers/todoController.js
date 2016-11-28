@@ -86,7 +86,6 @@ module.exports = {
 			// todo.completed = req.body.completed ? req.body.completed : todo.completed;
 			todo.completed = req.body.completed;
 			todo.note = req.body.note ? req.body.note : todo.note;
-			todo.updated_at = req.body.updated_at;
 			todo.updated_at = new Date().toISOString()
 			
             todo.save(function (err, todo) {
